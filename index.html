@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
+    .gradient-text {
+         
+         max-width: 80%;                /* So it doesn’t stretch too wide */
+  line-height: 1.6;
+
+ background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+background-clip: text;
+color: transparent;
+}
+
+.gradient-text1{
+    font-size: 18px;
+  background: #3F5EFB;
+background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+background-clip: text;
+color: transparent;
+  max-width: 80%;                /* So it doesn’t stretch too wide */
+  line-height: 1.6;
+
+
+
+}
+
+
+.link{
+    color: rgb(181, 4, 4);
+}
+
+    .card-container{
+        width: 400px;
+        height: 300px;
+        perspective: 1000px;
+        margin: 150px auto;
+
+    }
+
+    .card{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease-in-out;
+    }
+    .front-card{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px  rgb(247, 3, 247);
+        /* background-color: rgb(10, 10, 10); */
+
+    }
+
+      
+
+
+    .back-card{
+        width: 100%;
+        height: 100%;
+         position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px   rgb(193, 7, 235);
+        /* background-color: rgb(3, 3, 3); */
+        transform: rotateY(180deg);
+    }
+
+   .card:hover ,
+   .card:focus {
+  transform: rotateY(180deg);
+}
+
+
+
+
+   </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="front-card">
+                <h1 class="gradient-text">SRIDHAR S MELI</h1>
+                <p class="gradient-text">Role : Frontend Developer  </p>
+                <p class="gradient-text"><b><u>Short Intro:</u></b> </p>
+                <p class="gradient-text"><i> Passionate about developing smart systems and interactive web experiences</i></p>
+                <!-- <a href="">click here to my linkdein</a> -->
+            </div>
+            <div class="back-card">
+                <h2 class="gradient-text"> About Me: </h2>
+                <p class="gradient-text1">I’m a Frontend Developer who loves building clean,responsive,and user-friendly websites</p>
+                <a  class="link"  href="https://www.linkedin.com/in/sridhar-s-meli-a262342a4"  target="_blank">
+  Click here to my linkdein</a><br>
+  <a  class="link" href="Sridhar_JDE_SDE_BDE (2).pdf" download="Sridhar_S_Meli_Resume.pdf">Download My Resume</a>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
